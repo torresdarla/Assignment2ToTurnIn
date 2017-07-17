@@ -10,7 +10,7 @@ song=[]
 verse=['first verse','second verse','third verse','fourth verse','chorus']
 for time in verse:
     verses= Short.userString("Enter the %s:" %time)
-    song = song + ["%s" %verses]
+    song.append(verses)
 
 #Program now asks for chorus repeater
 repeat = Short.userInt("Enter the chorus repeat:")
